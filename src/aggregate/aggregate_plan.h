@@ -149,13 +149,13 @@ struct AGGPlan {
 /* Serialize the plan into an array of string args, to create a command to be sent over the network.
  * The strings need to be freed with free and the array needs to be freed with array_free(). The
  * length can be extracted with array_len */
-array_t AGPLN_Serialize(const AGGPlan *plan);
+//array_t AGPLN_Serialize(const AGGPlan *plan);
 
 /* Free the plan resources, not the plan itself */
 void AGPLN_Free(AGGPlan *plan);
 
 /* Print the plan */
-void AGPLN_Print(AGGPlan *plan);
+//void AGPLN_Print(AGGPlan *plan);
 
 void AGPLN_Init(AGGPlan *plan);
 
@@ -224,7 +224,7 @@ typedef enum {
  */
 RLookup *AGPLN_GetLookup(const AGGPlan *pln, const PLN_BaseStep *bstp, AGPLNGetLookupMode mode);
 
-void AGPLN_Dump(const AGGPlan *pln);
+//void AGPLN_Dump(const AGGPlan *pln);
 
 /**
  * Determines if the plan is a 'reduce' type. A 'reduce' plan is one which

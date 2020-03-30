@@ -198,7 +198,7 @@ void AGPLN_FreeSteps(AGGPlan *pln) {
     }
   }
 }
-
+/*
 void AGPLN_Dump(const AGGPlan *pln) {
   for (const DLLIST_node *nn = pln->steps.next; nn && nn != &pln->steps; nn = nn->next) {
     const PLN_BaseStep *stp = DLLIST_ITEM(nn, PLN_BaseStep, llnodePln);
@@ -380,3 +380,4 @@ array_t AGPLN_Serialize(const AGGPlan *pln) {
   }
   return arr;
 }
+*/
